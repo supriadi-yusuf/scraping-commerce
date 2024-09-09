@@ -1,2 +1,7 @@
 .venv
 __py_cache__
+htmls
+*.zip
+bootstrap
+extract
+images
