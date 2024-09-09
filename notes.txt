@@ -1,3 +1,26 @@
 json.dump vs json.load
 
 download bootstrap : https://startbootstrap.com/template/shop-homepage
+
+
+advance scraping
+================
+sometimes we need to login in order to be able to send requests.
+in this condition we have to use session.
+
+code example :
+
+import requests
+
+# create session
+session = requests.Session()
+
+user_login = {'username':'user','password':'pass'}
+
+# send request with session
+response = session.post('http://192.168.1.1/login', data=user_login)
+
+#print(response.status_code)
+
+# send request with session
+session.get(url)
